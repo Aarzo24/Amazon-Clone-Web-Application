@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Amazon</title>
+
+<style>
+
+body {
+  margin: 0;
+  font-family: Amazon ember;
+  background-color:white;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #131921;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: white;
+  border: 1px white solid;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.topnav input[type=text] {
+  float: left;
+  padding: 6px;
+  margin-top: 8px;
+  border: none;
+  font-size: 17px;
+  width: 900px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+ .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+.mySlides {display:none;
+}
+
+
+#right{
+float: right;}
+
+.secnav {
+  overflow: hidden;
+  background-color: #232f3e;
+}
+
+.secnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.secnav a:hover {
+  color: white;
+  border: 1px white solid;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x:hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  opacity: 0.9;
+
+}
+
+.sidebar a:hover {
+  color: black;
+display: block;
+border: hidden;
+font-size: 18px;
+background-color: lightgrey;
+background-size: auto;
+width: 100%;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  font-weight:200;
+}
+
+.sidebar .closebtn:hover{
+font-size: 37px;
+}
+
+.openbtn {
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  font-family: amazon ember;
+  background-color:#232f3e;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.bot{
+width: 100%;
+background-color:#232f3e;
+margin-top: 800px;
+margin-bottom: 0 auto;
+overflow:hidden;
+color: white;
+font-family: Sans-Serif;
+}
+
+.ok{
+  list-style: none;
+  margin-right:-10px;
+margin-left:-20px;
+  
+}
+.bottomnav{
+  float:left;
+}
+
+footer a{
+text-decoration: none;
+color:white;
+font-family: Sans-Serif;
+margin-top: -20px;
+}
+#links{
+float: left;
+width: 250px;
+margin: 0, auto;
+overflow: hidden;
+}
+footer a:hover{
+text-decoration: underline;
+}
+
+#Dn{
+margin:20px;
+font-family: Amazon Ember;
+}
+
+input[type="submit"]{
+border-radius: 5px;
+border: 1px solid black;
+background-color: peach;
+color: black;
+padding: 5px 10px;
+font-family: Amazon Ember;
+font-size: 17px;
+}
+</style>
+
+
+</head>
+
+<body>
+<div class="topnav">
+  <a class="active" href="/get"><strong><em>Amazon</em></strong></a>
+  <a href="#contact">Contact</a>
+  <input type="text" placeholder="Search Amazon.in">
+  <a href="/login" id="right"> Login</a>
+  <a href="#cart" id="right">Cart<a>
+</div>
+
+<div class="secnav">
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+  <a href="#"><h3><strong>Trending</strong></h3></a>
+  <a href="/elec">Best Sellers</a>
+  <a href="/hotnew">New Releases</a>
+  <a href="#">Movers and Shakers</a>
+  <a href="#"><h3><strong>Digital Content And Devices</strong></h3></a>
+  <a href="#">Fire TV</a><br>
+  <a href="#">Audible Audiobooks</a>
+  <a href="#"><h3><strong>Contact Us</strong></h3></a>
+<ul id="sidebar">
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">Clients</a></li>
+</ul>
+</div>
+  <a href="#"><button class="openbtn" onclick="openNav()">☰ All</button></a>  
+  <a href="/elec">Best Seller</a>
+  <a href="#deals">Today's Deals</a>
+  <a href="/hotnew">New Releases</a>
+  <a href="#service">Customer Service</a>
+  <a href="#home">Home and Kitchen</a>
+  <a href="/donate">Donate to Charity</a>
+</div>
+<div id="Dn">
+<h1> Help The Needy!</h1>
+<img src="images/donatepage.jpg" style="width: 90%; height: 450px;">
+<p>It is always better to give than to receive. When we help others, we not only make their lives better, but we also make the world a better place. Helping those in need not only benefits them, but it also benefits us. It feels good to know that we are making a difference in someone’s life. There are many ways that we can help those who are less fortunate than us. We can volunteer our time at a local soup kitchen or food bank. We can donate clothes or food to a local shelter. We can also simply lend a listening ear to someone who needs someone to talk to. We can help the poor, by providing things such as by giving them money, food, clothes, or shelter. Whatever way we choose to help, we should do so with a loving heart. We should also try to help them in other ways, such as by providing them with education or job opportunities. By helping the poor, we not only improve their lives but also make the world a better place.</p>
+<h2>Help us make someone's life better by donating money to your choice of Charity Organization.</h2>
+<h3>Please choose the organization that you wish to support by donating.</h3>
+<form>
+<select name="Charityorg" id="org" required>
+<option value="org1">World Vision India</option>
+<option value="org2">CHILD’S PLAY (INDIA) FOUNDATION</option>
+<option value="org3">AFIFA FOUNDATION</option>
+<option value="org4">Janani Home: Embracing Hope for Abandoned Girls</option>
+<option value="org5">Provide Gift & food to 700 Street Children</option>
+<option value="org6">Rescue sex workers & at-risk children in India</option>
+<option value="org7">Donate to Oldage Home of 20 oldage people in India</option>
+<option value="org8">Less Privileged Elders Need Care & Meal Support</option>
+<option value="org9">End Child Marriage Through Education</option>
+<option value="org10">Inclusive Schooling for Children with Disabilities</option>
+</select>
+<br>
+<p>Please enter the amount to be donated in the box.</p>
+<input type="number" id="amount" placeholder="In Rs" required><br><br><br>
+
+<caption>I agree to the <a href="#">terms & conditions</a> and give consent to donate my money for a good cause.</caption><br>
+<input type="checkbox" name="donate" value="donate" id="donate" required><br><br>
+<a href=""><input type="submit" value="Donate"></a>
+</form>
+</div>
+<footer class="bot">
+
+  <li class="ok"><div class="bottomnav">
+ <ul>
+ <ul id="links">
+ <li><h3>Get to Know Us</h3><li>
+ <li><a href="#">About Us</a></li><br>
+ <li><a href="#">Careers</a></li><br>
+ <li><a href="#">Press Releases</a></li><br>
+ <li><a href="#">Amazon Science</a></li><br>
+ </ul>
+ <ul id="links">
+ <li><h3>Connect With Us</h3></li>
+ <li><a href="#">Facebook</a></li><br>
+ <li><a href="#">Instagram</a></li><br>
+ <li><a href="#">Twitter</a></li><br>
+ </ul>
+ <ul id="links">
+ <li><h3>Make Money With Us</h3></li>
+ <li><a href="#">Sell on Amazon</a></li><br>
+ <li><a href="#">Sell under Amazon Accelerator</a></li><br>
+ <li><a href="#">Amazon Global Selling</a></li><br>
+ <li><a href="#">Fulfilment by Amazon</a></li><br>
+ </ul>
+ <ul id="links">
+ <li><h3>Let Us Help You</h3></li>
+ <li><a href="#">COVID-19 and Amazon</a></li><br>
+ <li><a href="#">Your Account</a></li><br>
+ <li><a href="#">Returns Centre</a></li><br>
+ <li><a href="#">100% Purchase Protection</a></li><br>
+ <li><a href="#">Amazon App Download</a></li><br>
+ <li><a href="#">Help</a></li><br>
+ </ul>
+ </ul>
+  </li>
+ </div>
+ </footer>
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+</html>
